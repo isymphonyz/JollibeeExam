@@ -47,6 +47,8 @@ JollibeeExam/
 │   │   │   ├── LoginViewModel.kt
 │   │   ├── home/
 │   │   │   ├── HomeScreen.kt
+│   │   ├── utils/
+│   │   │   ├── EmailValidator.kt
 ```
 
 ## Project Structure
@@ -58,7 +60,7 @@ JollibeeExam/
 ## Installation
 1. Clone the repository
 ```
-git clone https://github.com/yourusername/jollibee-exam.git
+git clone https://github.com/isymphonyz/JollibeeExam.git
 ```
 2. Open the project in Android Studio
 3. Sync the project with Gradle files
@@ -71,7 +73,7 @@ class JollibeeExamApplication : Application() {
         super.onCreate()
         startKoin {
             androidContext(this@JollibeeExamApplication)
-            modules(listOf(dataModule, featureModule))
+            modules(listOf(coreModule, dataModule, featureModule))
         }
     }
 }
@@ -83,11 +85,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JollibeeExamTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AppNavigation()
-                }
-            }
+            AppNavigation()
         }
     }
 }
@@ -160,14 +158,14 @@ fun AppNavigation() {
 
 ## Example Login Flow
 1. Open the App: The LoginScreen is displayed.
-2. Enter Email: jlbusr@example.com
+2. Enter Email: jlbusr@jollibee.com
 3. Enter Password: p@ssw0rd#1234
-4. Click Login: The app navigates to the HomeScreen displaying "Welcome test@example.com!!!"
+4. Click Login: The app navigates to the HomeScreen displaying "Welcome jlbusr@jollibee.com!!!"
 5. Click Logout: The app navigates back to the LoginScreen.
 6. Press Back Button: The application terminates.
 
 ## Example Invalid Login Flow
 1. Open the App: The LoginScreen is displayed.
 2. Enter Email: invalid@jollibee.com
-3. Enter Password: somepassword
+3. Enter Password: somePassword
 4. Click Login: An error message "Invalid credentials" is displayed.
