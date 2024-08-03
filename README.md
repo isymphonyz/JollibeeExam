@@ -1,6 +1,12 @@
 # Jollibee Exam Application
 This application demonstrates a simple user authentication flow using email and password. It follows the MVVM and Clean Architecture principles, Koin for dependency injection, Jetpack Compose for the UI and unit tests. The project is organized into modular architecture principles with data, domain, feature, and core modules.
 
+## Screenshot
+<img src="https://github.com/user-attachments/assets/8d041836-e3f8-438c-ba4c-d79b99659e11" width="200"/>
+<img src="https://github.com/user-attachments/assets/417cb17d-efc1-42ad-9f29-919b03e2783a" width="200"/>
+<img src="https://github.com/user-attachments/assets/3e293c7c-f9c0-472c-995b-c4a0e6ed5551" width="200"/>
+<img src="https://github.com/user-attachments/assets/aafa47c5-9ef1-432c-a486-f5c8390bee84" width="200"/>
+
 ## About
 - Package name: `com.plearn.jollibeeexam`
 - Min SDK: 24
