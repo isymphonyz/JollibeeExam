@@ -54,7 +54,7 @@ JollibeeExam/
 │   │   │   ├── EmailValidator.kt
 ```
 
-## Project Structure
+## Prerequisite
 - Android Studio
 - Kotlin
 - Koin
