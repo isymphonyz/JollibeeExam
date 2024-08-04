@@ -2,10 +2,7 @@
 This application demonstrates a simple user authentication flow using email and password. It follows the MVVM and Clean Architecture principles, Koin for dependency injection, Jetpack Compose for the UI and unit tests. The project is organized into modular architecture principles with data, domain, feature, and core modules.
 
 ## Screenshot
-<img src="/screenshot/01.png" width="200"/>
-<img src="/screenshot/02.png" width="200"/>
-<img src="/screenshot/03.png" width="200"/>
-<img src="/screenshot/04.png" width="200"/>
+<img src="/screenshot/01.png" width="200"/><img src="/screenshot/02.png" width="200"/><img src="/screenshot/03.png" width="200"/><img src="/screenshot/04.png" width="200"/>
 
 ## About
 - Package name: `com.plearn.jollibeeexam`
